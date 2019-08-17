@@ -1,0 +1,18 @@
+<%= render "header" %>
+
+<div class="body-contact">
+  <div class="banner-contact">
+    <div class="banner-content-container">
+      <div class="avataar">
+      </div>
+      <div class="form">
+        <%= simple_form_for(@contact) do |f| %>
+          <div><%= f.input :Email, placeholder: 'user@domain.com' %></div>
+          <div><%= f.input :Objet, placeholder: 'Sujet' %></div>
+          <div><%= f.input :Message, :as => :text, :input_html => { 'rows' => 5, 'cols' => 10 }, placeholder: 'Votre message ici...' %></div>
+          <div class="button"><%= f.submit "Valider", class: "btn btn-primary" %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

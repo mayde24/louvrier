@@ -1,35 +1,31 @@
-// Import your components CSS files here.
-@import "alert";
-@import "avatar";
-@import "navbar";
-@import "home";
-@import "footer";
-@import "bio";
-@import "press";
-@import "show";
-@import "contact";
-
-h3 {
-  font-size: 21px;
-}
-
-.container {
-  width: 65%;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-.banner-content-container {
-  width: 65%;
-  margin: 0 auto;
+.footer {
+  margin-top: 50px;
+  background: black;
+  opacity: 0.7;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
 }
-
-.container-card {
+.footer-links {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  align-items: center;
+}
+.footer-links a {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+  transition-duration: 1s;
+}
+.footer .fa-heart {
+  color: #D23333;
 }
 
 @media (max-width: 1660px) {
@@ -51,40 +47,29 @@ h3 {
   .hidden {
     display: none;
   }
-  .banner-content-container {
+  .container, .banner-content-container {
     width: 95%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 760px) {
   /* For a screen < 720px, this CSS will be read */
   .container-card {
     display: grid;
     flex-wrap : wrap;
   }
-  .container {
-    width: 100%;
-  }
-  .banner-content-container {
+  .container, .banner-content-container {
     width: 100%;
   }
 
-  h1 {
-    font-size: 25px;
+  .footer-copyright {
+    display: none;
   }
-  h2 {
-    font-size: 21px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 15px;
-  }
-  p {
-    font-size: 13px;
+
+  .footer {
+    justify-content: center;
   }
 }
 @media (max-width: 540px) {

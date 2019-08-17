@@ -1,0 +1,79 @@
+.body-contact {
+  position: relative;
+}
+
+.body-contact::before {
+  background-image : url(https://www.michiganradio.org/sites/michigan/files/styles/x_large/public/201905/stack-letters-447579_1920.jpg);
+  background-size: cover;
+  filter: brightness(50%);
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.banner-contact {
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text-banner {
+    color: white;
+    text-align: justify;
+    align-self: center;
+    width: 60%;
+  }
+
+  .avataar {
+    background-image: url(https://i2.wp.com/www.francklouvrier.fr/wp-content/uploads/2010/03/portrait.jpg?fit=300%2C300);
+    background-size: cover;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    width: 300px;
+    height: 300px;
+    align-self: center;
+  }
+}
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.simple_form {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1290px) {
+  /* For a screen < 960px, this CSS will be read */
+  .avataar {
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  /* For a screen < 960px, this CSS will be read */
+  .avataar {
+    display: none;
+  }
+}

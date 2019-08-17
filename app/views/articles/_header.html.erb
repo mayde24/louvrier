@@ -1,0 +1,31 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "https://image.freepik.com/vecteurs-libre/composition-election-presidentielle-design-plat_23-2147917905.jpg", class: "avatar" %>
+  <% end %>
+
+
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav" style="flex-direction: row;">
+      <div>
+        <li class="nav-item active">
+        <%= link_to "Home", root_path %>
+      </li>
+      </div>
+      <div>
+        <li class="nav-item">
+        <%= link_to "Biographie", biographie_path%>
+      </li>
+      </div>
+      <div>
+        <li class="nav-item">
+        <%= link_to "Press", articles_path %>
+      </li>
+      </div>
+      <div>
+        <li class="nav-item">
+        <%= link_to "Contact", contact_path %>
+      </li>
+      </div>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+.body-bio {
+  position: relative;
+}
+
+.body-bio::before {
+  background-image : url(https://soutenir.fondation-patrimoine.org/cdn.iraiser.eu/RNwCyx5A4CZ3YaJTQ2CcEvEKpntbZzUXbNxEEdIn2f0IVEnMNdlPRzlto2bkMOd1/Rachel_Barrier/origin/CorseAjaccio-BibliothqueFeschAjacciocOuiFlashpourlaFondationdupatrimoine1-min.jpg);
+  background-size: cover;
+  filter: brightness(50%);
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.banner-bio {
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text-banner {
+    color: white;
+    text-align: justify;
+    align-self: center;
+    width: 60%;
+  }
+
+  .avataar {
+    background-image: url(https://i2.wp.com/www.francklouvrier.fr/wp-content/uploads/2010/03/portrait.jpg?fit=300%2C300);
+    background-size: cover;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    width: 300px;
+    height: 300px;
+    align-self: center;
+  }
+}
+
+.card-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 75px;
+  padding-top: 75px;
+
+  .text-bio {
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  i {
+    color: #8B0000;
+  }
+
+  .right {
+    padding-right: 15px;
+  }
+
+  .left {
+    padding-left: 15px;
+  }
+}
+
+.margintop {
+  padding-top: 50px;
+}
+
+.ligne {
+  border-bottom: 1px solid #c4cdcf;
+}
+
+.pad-top {
+  margin-top: 100px;
+}
+
+@media (max-width: 1060px) {
+  /* For a screen < 960px, this CSS will be read */
+  .banner-bio {
+    height: 100vh;
+  }
+
+}
+@media (max-width: 780px) {
+  /* For a screen < 720px, this CSS will be read */
+
+  .margintop {
+    padding-top: 10px;
+  }
+  .banner-bio {
+    .avataar {
+      height: 200px;
+      width: 200px;
+      margin-top: 60px;
+    }
+  }
+
+  .banner-content-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-bio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 50px;
+      padding: 0px;
+    }
+    .text-bio {
+      padding: 0px;
+    }
+    .right {
+      display: none;
+    }
+    .left {
+      padding-left: 0px;
+    }
+    .hide {
+      display: block;
+    }
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+
+}

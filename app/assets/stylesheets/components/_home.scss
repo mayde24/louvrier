@@ -1,0 +1,156 @@
+.banner {
+  background-image : url(https://s2.best-wallpaper.net/wallpaper/5120x2880/1811/Minato-Japan-skyscrapers-city-dusk_5120x2880.jpg);
+  background-size: cover;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .text-banner {
+    color: white;
+    text-align: justify;
+    width: 60%;
+    align-self:center;
+  }
+
+  .avataar {
+    background-image: url(https://i2.wp.com/www.francklouvrier.fr/wp-content/uploads/2010/03/portrait.jpg?fit=300%2C300);
+    background-size: cover;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  background: white;
+  width: 30%;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .titre {
+    min-height: 40px;
+    color: #2f4f4f;
+    font-weight: bolder;
+  }
+
+  .date {
+    font-size: 13px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    color: gray;
+  }
+
+  .description {
+    text-align: justify;
+    height: 85px;
+  }
+  &:hover {
+    filter: brightness(85%);
+    transition-duration: 1s;
+    box-shadow: none;
+  }
+
+  h4 {
+    font-weight: bolder;
+  }
+}
+
+.title-banner {
+  text-align:left;
+}
+
+.middle {
+  margin-top: 50px;
+  background-image: url(http://scd.rfi.fr/sites/filesrfi/imagecache/rfi_16x9_1024_578/sites/images.rfi.fr/files/aef_image/8314929977_36b1d58cf6_o_0.jpg);
+  filter: opacity(50%);
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding-top: 6%;
+  div {
+    filter: opacity(150%);
+  }
+  input {
+    height: 38px;
+  }
+  h2 {
+    font-weight: bolder;
+    color: white;
+  }
+}
+
+@media (max-width: 1360px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card {
+    width: 32%;
+  }
+}
+
+@media (max-width: 1060px) {
+  /* For a screen < 960px, this CSS will be read */
+  .hidden {
+    display: none;
+  }
+
+  .card {
+    width: 45%;
+  }
+  .title-banner {
+    text-align: center;
+    padding-top: 35px;
+  }
+}
+@media (max-width: 780px) {
+  /* For a screen < 720px, this CSS will be read */
+  .middle-text {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .middle {
+    height: 130px;
+  }
+
+  .card {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .date {
+      padding-bottom: 0px;
+    }
+    h4 {
+      margin-bottom: 0px;
+    }
+    .description {
+      height: 100%;
+    }
+  }
+
+  .banner .avataar {
+    margin-top: 60px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .middle {
+    height: 145px;
+  }
+}

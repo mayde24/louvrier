@@ -1,0 +1,93 @@
+.big-card-show {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
+  a {
+    color: #2F4F4F;
+    text-decoration: none;
+  }
+  .description-big {
+    padding: 45px;
+  }
+}
+
+.avataaar {
+    background-image: url(https://i2.wp.com/www.francklouvrier.fr/wp-content/uploads/2010/03/portrait.jpg?fit=300%2C300);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.info-article {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: gray;
+    margin-bottom: 0px;
+  }
+}
+
+.yeye {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1090px) {
+  /* For a screen < 960px, this CSS will be read */
+  .big-card-show {
+    img {
+      height: 300px;
+    }
+  }
+  .big-card-container {
+    .description-big, .description-big h4 {
+      font-size: 15px;
+      padding-bottom: 0px;
+    }
+  }
+  .info-between-big {
+    h2 {
+      font-size: 20px;
+      padding: 0px 15px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  /* For a screen < 960px, this CSS will be read */
+  .big-card-container {
+    .description-big, .description-big h4 {
+      font-size: 13px;
+      padding-bottom: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .info-between-big {
+    margin-top: 60px;
+    h2 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 15px;
+    }
+  }
+
+  .hidee {
+    display: none;
+  }
+}

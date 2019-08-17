@@ -1,0 +1,30 @@
+<%= render "header" %>
+
+<div class="container">
+  <div class="info-between-big pb-3 pad-top">
+    <div><h2 style="color: #2F4F4F"><%= @article.name %></h2></div>
+    <div><h4 class="hidee"><%= @article.date %>  by Franck L.</h4></div>
+  </div>
+  <div class="big-card-container">
+    <div class="big-card-show">
+      <div><%= image_tag @article.photo.url %></div>
+      <div class="description-big"><h4 style="color: #2F4F4F"><%= @article.description %>.  Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum. laudato consilio consensit in pacem ea. </h4></div>
+      <div class="description-big">
+        <p><%= @article.content %> <br> <br> <%= @article.content %> <%= @article.content %> <br> <br> <%= @article.content %> <%= @article.content %> <%= @article.content %> <br> </p>
+      </div>
+      <div class="info-article p-3">
+        <div class="yeye">
+          <%= link_to biographie_path do %>
+          <div class="avataaar avatar pr-3"></div>
+          <% end %>
+          <div><p> By Franck L.</p> </div>
+        </div>
+        <div>
+          <p><%= @article.date %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "footer" %>

@@ -1,0 +1,318 @@
+.big-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.card-index {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 47%;
+  .info {
+    p {
+      text-align: justify;
+      color:black;
+    }
+  }
+  a {
+    color: #2F4F4F;
+    text-decoration: none;
+    text-align: left;
+  }
+  &:hover {
+    filter: brightness(85%);
+    transition-duration: 1s;
+    box-shadow: none;
+  }
+    a {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    &:hover {
+      text-decoration: none;
+      color:black;
+    }
+  }
+}
+
+.info-between {
+    display:flex;
+    justify-content: space-between;
+    h4 {
+      font-weight: bolder;
+      font-size: 23px;
+      color: #2F4F4F;
+    }
+    p {
+      font-weight: lighter;
+      font-size: 13px;
+    }
+}
+
+.image img {
+  width: 100%;
+  height: 230px;
+  object-fit:cover;
+}
+
+.big-card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
+
+  a {
+    color: #2F4F4F;
+    text-decoration: none;
+  }
+  &:hover {
+    filter: brightness(85%);
+    transition-duration: 1s;
+    box-shadow: none;
+  }
+}
+
+.big {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  a {
+    color: #2F4F4F;
+    text-decoration: none;
+  }
+}
+
+.titre-big {
+  color: #2F4F4F;
+  height: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.description-big {
+  text-align: justify;
+  padding: 25px;
+  color:black;
+  font-size: 20px;
+}
+
+.ligne-black {
+  border-bottom: 1px solid #dce0e0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.info-between-big {
+    display:flex;
+    justify-content: space-between;
+    h2 {
+      font-weight: bolder;
+    }
+    h4 {
+      font-weight: lighter;
+      font-size: 23px;
+    }
+    p {
+      font-weight: lighter;
+      font-size: 13px;
+    }
+}
+
+// BIG
+
+.container-big {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+    a {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    &:hover {
+      text-decoration: none;
+      color:black;
+    }
+  }
+}
+
+.container-big-card {
+  width: 59%;
+  height: 750px;
+}
+
+.list-article {
+  overflow: scroll;
+  overflow-x:hidden;
+  height: 720px;
+  background-color: white;
+  ul {
+    padding: 0px;
+    margin: 0px;
+    .li {
+      padding: 10px 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+    }
+    .li:hover {
+      background-color: #c3dbd7 ;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.li {
+  padding: 10px 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  .one {
+    width: 190px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+.li:hover {
+  background-color: #c3dbd7 ;
+  transition-duration: 1s;
+}
+
+.yolo {
+  height: 62px;
+  h3 {
+    align-self: center;
+    background-color: #c7d1d1 ;
+    color: #2F4F4F;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    height: 62px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 1620px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container-big {
+    width: 90%;
+  }
+  .container-big-card {
+    h4 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .list-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1380px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container-big-card {
+    width: 55%;
+  }
+  .container-big {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1260px) {
+  /* For a screen < 960px, this CSS will be read */
+  .list-container {
+    display: none;
+  }
+  .container-big {
+    width: 90%;
+  }
+  .container-big-card {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .info {
+    .info-between {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card-index {
+    width: 45%;
+    height: 400px;
+  }
+  .container, .banner-content-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 770px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-index {
+    width: 47%;
+    height: 420px;
+  }
+  .container-big-card {
+    width: 85%;
+    height: 450px;
+    img {
+      height: 270px;
+    }
+  }
+  .container-big {
+    width: 100%;
+    padding: 0px;
+    padding-top: 80px;
+  }
+
+  .description-big {
+    h3 {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-index {
+    width: 90%;
+    width: 100%;
+    height: 100%;
+  }
+  .look {
+    display: none;
+  }
+
+  .container-big {
+    padding-top: 40px;
+  }
+  .card-grid {
+    margin: 0px;
+  }
+}
