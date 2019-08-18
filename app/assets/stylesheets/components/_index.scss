@@ -13,6 +13,10 @@ h3 {
   font-size: 21px;
 }
 
+[data-aos^=fade][data-aos^=fade] {
+  transition property : 1s;
+}
+
 .container {
   width: 65%;
   margin: 0 auto;
