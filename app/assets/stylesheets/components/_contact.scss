@@ -60,7 +60,7 @@ label {
 
 @media (max-width: 1290px) {
   /* For a screen < 960px, this CSS will be read */
-  .avataar {
+  .banner-contact .avataar {
     margin-bottom: 50px;
     height: 200px;
     width: 200px;
@@ -73,7 +73,7 @@ label {
 
 @media (max-width: 800px) {
   /* For a screen < 960px, this CSS will be read */
-  .avataar {
+  .banner-contact .avataar {
     display: none;
   }
 }
