@@ -283,14 +283,18 @@
   /* For a screen < 720px, this CSS will be read */
   .card-index {
     width: 47%;
-    height: 420px;
+    height: 440px;
   }
   .container-big-card {
     width: 85%;
-    height: 450px;
+    height: 400px;
     img {
       height: 270px;
     }
+  }
+
+  .container {
+    max-width: 95%;
   }
 
   .card-grid {
