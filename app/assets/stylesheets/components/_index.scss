@@ -14,7 +14,7 @@ h3 {
 }
 
 [data-aos^=fade][data-aos^=fade] {
-  transition property : 1s;
+  transition-property : 1s;
 }
 
 .container {
@@ -59,6 +59,9 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .container-big-card {
+    height: 500px;
   }
 }
 @media (max-width: 780px) {
