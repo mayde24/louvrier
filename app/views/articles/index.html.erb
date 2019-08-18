@@ -1,7 +1,7 @@
 <%= render 'header' %>
 
 <div class="container-big big">
-  <div class="container-big-card look">
+  <div class="container-big-card look" data-aos="zoom-in-right">
     <%= link_to article_path(@big) do %>
     <div class="info-between-big pb-3">
       <div><h2 style="color: #2F4F4F"><%= @big.name %></h2></div>
@@ -15,7 +15,7 @@
     </div>
     <% end %>
   </div>
-  <div class="list-container">
+  <div class="list-container" data-aos="zoom-in-left">
     <div class="yolo"><h3 class="pl-3">Ipsum Dolor mand : </h3></div>
     <div class="list-article">
       <% @articles.each do |article| %>
@@ -35,8 +35,8 @@
 <div class="container card-grid mt-3">
 
     <% @articles.each do |article| %>
-      <% if article.id > 4 %>
-        <div class="card-index">
+      <% if article.id > 94 %>
+        <div class="card-index" data-aos="fade-up">
           <%= link_to article_path(article) do %>
           <div class="image"><%= image_tag article.photo.url %></div>
           <div class="info">

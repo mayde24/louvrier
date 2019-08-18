@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   def home
-    @articles1 = [Article.find(9), Article.find(6), Article.find(7)]
-    @articles2 = [Article.find(8), Article.find(9), Article.find(10)]
+    @articles1 = [Article.find(95), Article.find(96), Article.find(97)]
+    @articles2 = [Article.find(98), Article.find(99), Article.find(100)]
   end
 
   def biographie
@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
-    @big = Article.find(4)
+    @big = Article.find(94)
   end
 
   def show

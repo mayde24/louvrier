@@ -16,7 +16,6 @@ h3 {
 .container {
   width: 65%;
   margin: 0 auto;
-  padding: 0px;
 }
 
 .banner-content-container {
@@ -65,7 +64,7 @@ h3 {
     flex-wrap : wrap;
   }
   .container {
-    width: 100%;
+    width: 95%;
   }
   .banner-content-container {
     width: 100%;
@@ -90,4 +89,9 @@ h3 {
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
 
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
 }

@@ -1,20 +1,23 @@
 <%= render "header" %>
 
 <div class="banner">
-  <div class="banner-content-container">
+  <div class="banner-image">
+    <div class="banner-content-container">
     <div class="avataar">
     </div>
     <div class="text-banner">
-      <h1 class="title-banner">Lorem citerioris timebantur</h1>
-      <h4>Parietes timebantur velut quondam in velut parietes citerioris timebantur conscii velut in paterfamilias Marcio paterfamilias.</h4>
+      <h1 class="title-banner toop">Lorem citerioris timebantur</h1>
+      <h4 class="title-banner">Parietes timebantur velut quondam in velut parietes citerioris timebantur conscii velut in paterfamilias Marcio paterfamilias.</h4>
     </div>
+  </div>
   </div>
 </div>
 
 <div class="container">
   <div class="container-card mx-0">
     <% @articles1.each do |article| %>
-      <div class="card p-0 <% if (article.id == 7) %> hidden <% end %>">
+      <div class="card p-0 <% if (article.id == 97) %> hidden <% end %>" data-aos="fade-up"
+     data-aos-duration="1000">
         <%= link_to article_path(article) do %>
         <div><%= image_tag article.photo.url %></div>
         <div class="titre px-3 pt-2"><h4><%= article.name %></h4></div>
@@ -25,18 +28,19 @@
     <% end %>
   </div>
 
-<div class="middle mx-0 px-0">
+<div class="middle mx-0 px-0" data-aos="zoom-in">
   <div>
     <h2 class="middle-text">umeram mentibus ardore quodam infuso</h2>
   </div>
   <div>
-    <%= link_to "See the biographie", biographie_path, class: "btn btn-warning" %>
+    <%= link_to "Voir la biographie", biographie_path, class: "btn btn-warning" %>
   </div>
 </div>
 
   <div class="container-card mx-0">
     <% @articles2.each do |article| %>
-      <div class="card p-0  <% if (article.id == 10) %> hidden <% end %>">
+      <div class="card p-0  <% if (article.id == 100) %> hidden <% end %>" data-aos="fade-up"
+     data-aos-duration="1000">
         <%= link_to article_path(article) do %>
         <div><%= image_tag article.photo.url %></div>
         <div class="titre px-3 pt-2"><h4><%= article.name %></h4></div>

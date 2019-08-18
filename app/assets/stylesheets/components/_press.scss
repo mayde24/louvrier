@@ -161,7 +161,7 @@
 .list-article {
   overflow: scroll;
   overflow-x:hidden;
-  height: 720px;
+  height: 694px;
   background-color: white;
   ul {
     padding: 0px;
@@ -228,7 +228,7 @@
     }
   }
   .list-container {
-    width: 40%;
+    width: 37%;
   }
 }
 
@@ -272,6 +272,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .big-card-container  {
+    width: 100%;
+    img {
+      height: 400px;
+    }
+  }
 }
 @media (max-width: 770px) {
   /* For a screen < 720px, this CSS will be read */
@@ -286,10 +292,15 @@
       height: 270px;
     }
   }
+
+  .card-grid {
+    width: 100%;
+  }
   .container-big {
     width: 100%;
     padding: 0px;
     padding-top: 80px;
+    padding-bottom: 10px;
   }
 
   .description-big {
