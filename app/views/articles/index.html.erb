@@ -35,7 +35,7 @@
 <div class="container card-grid mt-3">
 
     <% @articles.each do |article| %>
-      <% if article.id > 94 %>
+      <% if article.id > 4 %>
         <div class="card-index" data-aos="fade-up">
           <%= link_to article_path(article) do %>
           <div class="image"><%= image_tag article.photo.url %></div>

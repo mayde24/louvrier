@@ -16,7 +16,7 @@
 <div class="container">
   <div class="container-card mx-0">
     <% @articles1.each do |article| %>
-      <div class="card p-0 <% if (article.id == 97) %> hidden <% end %>" data-aos="fade-up"
+      <div class="card p-0 <% if (article.id == 7) %> hidden <% end %>" data-aos="fade-up"
      data-aos-duration="1000">
         <%= link_to article_path(article) do %>
         <div><%= image_tag article.photo.url %></div>
@@ -39,7 +39,7 @@
 
   <div class="container-card mx-0">
     <% @articles2.each do |article| %>
-      <div class="card p-0  <% if (article.id == 100) %> hidden <% end %>" data-aos="fade-up"
+      <div class="card p-0  <% if (article.id == 10) %> hidden <% end %>" data-aos="fade-up"
      data-aos-duration="1000">
         <%= link_to article_path(article) do %>
         <div><%= image_tag article.photo.url %></div>
