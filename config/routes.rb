@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "articles#home"
   resources :articles
   get "/biographie", to: "articles#biographie"
+  get "/", to: "articles#home"
   get "/contact", to: "articles#contact"
   post "/contact", to: "articles#answer"
 end
