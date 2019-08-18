@@ -7,24 +7,24 @@
   <div class="navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav" style="flex-direction: row;">
       <div>
-        <li class="nav-item active">
-        <%= link_to "Home", root_path %>
-      </li>
+        <%= link_to root_path do %>
+        <li class="nav-item active">Home</li>
+        <% end %>
       </div>
       <div>
-        <li class="nav-item">
-        <%= link_to "Biographie", biographie_path%>
-      </li>
+        <%= link_to biographie_path do %>
+        <li class="nav-item active">Biographie</li>
+        <% end %>
       </div>
       <div>
-        <li class="nav-item">
-        <%= link_to "Press", articles_path %>
-      </li>
+        <%= link_to articles_path do %>
+        <li class="nav-item active">Press</li>
+        <% end %>
       </div>
       <div>
-        <li class="nav-item">
-        <%= link_to "Contact", contact_path %>
-      </li>
+        <%= link_to contact_path do %>
+        <li class="nav-item active">Contact</li>
+        <% end %>
       </div>
     </ul>
   </div>
